@@ -1,0 +1,316 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd6fba9bc5f43dc34f0e31eababe82ab/transformed/material3-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ca478bda2c8485059df04dcc60b8b5be/transformed/material-ripple-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fe97465199916cec9c1b1b6b460e78dc/transformed/material-icons-core-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/341cf1809ce42a2446bd1852723526ab/transformed/material-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d745c3304a51d2ee49b01d3d924d884a/transformed/animation-core-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c6e9b376b58b41dd35deae85d8ed46af/transformed/animation-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/8f84b552451cbeb111f4e7d3554d6315/transformed/foundation-layout-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd7992a40a218d6b643fdafc179f3836/transformed/foundation-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/82d5c23c00623cfa0762b9d9db50157e/transformed/ui-tooling-data-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/68afd49bce20980c22290fbc9c2c2383/transformed/ui-unit-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e172702d247a7c77dee81ce462c9ea76/transformed/ui-geometry-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-util:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/11f358173048788f44c88b942cb42356/transformed/ui-util-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-text:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/7c1d02722cb46f59798880acfcf450e9/transformed/ui-text-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ac90de5d7c5e7c34d24d4fb8f9dc68a9/transformed/ui-tooling-preview-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/da54f8575c8c17523101f78632bf45e1/transformed/ui-graphics-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/22aa21de6b60568bb22b00ab6978e1ff/transformed/activity-1.7.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e60905b56a8988d29d06d013d58c6351/transformed/activity-ktx-1.7.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0cfbd5df3856efb375ef71cdece90018/transformed/activity-compose-1.7.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/391cd38f4c7f5fe1b7763df0b9f6f73f/transformed/ui-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d4ea37311dd51491e24040049460d40a/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/739244c45013009aa627797487a30f8e/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/61cea8e20c3e167329e545e74762b9eb/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/36ffe5fd8ca95514ece0dd4cbb425cda/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fb288e821a294d738f2c8ad65a4a266e/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/aabf6eb5d55b248d2649546e07adfbbd/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/21ca9df62bf96d54d13161be7e642a12/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6b03d605cc3b3010fc62ae70b4dd1c29/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/1be142d482273c7899c5d474ae8a6772/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c112ed1f7b3941056298b7a1c59d839d/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/17e0bc974d3602a0c7c3014e243479b1/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/a0e8f0045fc6345df63c268a2ca8928b/transformed/runtime-saveable-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/3ffc3704c06e4364c22e22135b3e648d/transformed/runtime-1.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e940ebb240c33d15b87307a47022ef22/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/deae65c476bf3f27565dbfb925bcdf3e/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/b451a30ef26221adad8e81d119eec50f/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0e7e63040c704daf48085b996329c49a/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:5:5-26:19
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:5:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e940ebb240c33d15b87307a47022ef22/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e940ebb240c33d15b87307a47022ef22/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:14:9-29
+	android:icon
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:13:9-46
+	android:dataExtractionRules
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:7:9-65
+activity#com.example.lemonade.MainActivity
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:18:13-45
+	android:exported
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:17:13-36
+	android:theme
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:19:13-50
+	android:name
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd6fba9bc5f43dc34f0e31eababe82ab/transformed/material3-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd6fba9bc5f43dc34f0e31eababe82ab/transformed/material3-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ca478bda2c8485059df04dcc60b8b5be/transformed/material-ripple-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ca478bda2c8485059df04dcc60b8b5be/transformed/material-ripple-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fe97465199916cec9c1b1b6b460e78dc/transformed/material-icons-core-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fe97465199916cec9c1b1b6b460e78dc/transformed/material-icons-core-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/341cf1809ce42a2446bd1852723526ab/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/341cf1809ce42a2446bd1852723526ab/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d745c3304a51d2ee49b01d3d924d884a/transformed/animation-core-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d745c3304a51d2ee49b01d3d924d884a/transformed/animation-core-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c6e9b376b58b41dd35deae85d8ed46af/transformed/animation-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c6e9b376b58b41dd35deae85d8ed46af/transformed/animation-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/8f84b552451cbeb111f4e7d3554d6315/transformed/foundation-layout-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/8f84b552451cbeb111f4e7d3554d6315/transformed/foundation-layout-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd7992a40a218d6b643fdafc179f3836/transformed/foundation-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd7992a40a218d6b643fdafc179f3836/transformed/foundation-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/82d5c23c00623cfa0762b9d9db50157e/transformed/ui-tooling-data-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/82d5c23c00623cfa0762b9d9db50157e/transformed/ui-tooling-data-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/68afd49bce20980c22290fbc9c2c2383/transformed/ui-unit-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/68afd49bce20980c22290fbc9c2c2383/transformed/ui-unit-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e172702d247a7c77dee81ce462c9ea76/transformed/ui-geometry-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e172702d247a7c77dee81ce462c9ea76/transformed/ui-geometry-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/11f358173048788f44c88b942cb42356/transformed/ui-util-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/11f358173048788f44c88b942cb42356/transformed/ui-util-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/7c1d02722cb46f59798880acfcf450e9/transformed/ui-text-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/7c1d02722cb46f59798880acfcf450e9/transformed/ui-text-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ac90de5d7c5e7c34d24d4fb8f9dc68a9/transformed/ui-tooling-preview-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/ac90de5d7c5e7c34d24d4fb8f9dc68a9/transformed/ui-tooling-preview-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/da54f8575c8c17523101f78632bf45e1/transformed/ui-graphics-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/da54f8575c8c17523101f78632bf45e1/transformed/ui-graphics-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/22aa21de6b60568bb22b00ab6978e1ff/transformed/activity-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/22aa21de6b60568bb22b00ab6978e1ff/transformed/activity-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e60905b56a8988d29d06d013d58c6351/transformed/activity-ktx-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e60905b56a8988d29d06d013d58c6351/transformed/activity-ktx-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0cfbd5df3856efb375ef71cdece90018/transformed/activity-compose-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.7.2] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0cfbd5df3856efb375ef71cdece90018/transformed/activity-compose-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/391cd38f4c7f5fe1b7763df0b9f6f73f/transformed/ui-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/391cd38f4c7f5fe1b7763df0b9f6f73f/transformed/ui-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d4ea37311dd51491e24040049460d40a/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/d4ea37311dd51491e24040049460d40a/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/739244c45013009aa627797487a30f8e/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/739244c45013009aa627797487a30f8e/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/61cea8e20c3e167329e545e74762b9eb/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/61cea8e20c3e167329e545e74762b9eb/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/36ffe5fd8ca95514ece0dd4cbb425cda/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/36ffe5fd8ca95514ece0dd4cbb425cda/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fb288e821a294d738f2c8ad65a4a266e/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/fb288e821a294d738f2c8ad65a4a266e/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/aabf6eb5d55b248d2649546e07adfbbd/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/aabf6eb5d55b248d2649546e07adfbbd/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/21ca9df62bf96d54d13161be7e642a12/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/21ca9df62bf96d54d13161be7e642a12/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6b03d605cc3b3010fc62ae70b4dd1c29/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6b03d605cc3b3010fc62ae70b4dd1c29/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/1be142d482273c7899c5d474ae8a6772/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/1be142d482273c7899c5d474ae8a6772/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c112ed1f7b3941056298b7a1c59d839d/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c112ed1f7b3941056298b7a1c59d839d/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/17e0bc974d3602a0c7c3014e243479b1/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/17e0bc974d3602a0c7c3014e243479b1/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/a0e8f0045fc6345df63c268a2ca8928b/transformed/runtime-saveable-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/a0e8f0045fc6345df63c268a2ca8928b/transformed/runtime-saveable-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/3ffc3704c06e4364c22e22135b3e648d/transformed/runtime-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/3ffc3704c06e4364c22e22135b3e648d/transformed/runtime-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e940ebb240c33d15b87307a47022ef22/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/e940ebb240c33d15b87307a47022ef22/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/deae65c476bf3f27565dbfb925bcdf3e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/deae65c476bf3f27565dbfb925bcdf3e/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/b451a30ef26221adad8e81d119eec50f/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/b451a30ef26221adad8e81d119eec50f/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0e7e63040c704daf48085b996329c49a/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0e7e63040c704daf48085b996329c49a/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/AndroidManifest.xml
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/768ed22ee5b87667317a97ec75e6bf9d/transformed/ui-test-manifest-1.4.0/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.4.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/378df300ee8cfa98932194233ccd9546/transformed/ui-tooling-1.4.0/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/c86f9eda173dee99506d75a7d8efb500/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/0f580fefbee472720fe9e5d9915a383a/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/2b90eb6f75e91ec5cffdccdeae500c03/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#com.example.lemonade.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.lemonade.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/bartolomeu-hangalo/.gradle/caches/transforms-3/57ddbf6ee7eb9b667bbfe99458a36aa5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

@@ -1,0 +1,138 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/bartolomeu-hangalo/.gradle/daemon/8.0/com.example.lemonade.app-mergeDebugResources-42:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "2175",
+                        "endColumns": "100",
+                        "endOffsets": "2271"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd6fba9bc5f43dc34f0e31eababe82ab/transformed/material3-1.0.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "5,8,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "332,604,772",
+                        "endColumns": "75,81,73",
+                        "endOffsets": "403,681,841"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/391cd38f4c7f5fe1b7763df0b9f6f73f/transformed/ui-1.4.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4,6,7,9,11,12,21,22,23,24,25,26,27,29,30,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "151,246,408,505,686,846,929,1605,1696,1783,1855,1924,2009,2099,2276,2352,2419",
+                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
+                        "endOffsets": "241,327,500,599,767,924,1021,1691,1778,1850,1919,2004,2094,2170,2347,2414,2527"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/res/values-pt/strings.xml",
+                    "from": {
+                        "startLines": "1,8,4,9,5,10,3,2,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "16,456,231,508,300,577,144,62,396",
+                        "endColumns": "45,51,68,68,94,64,86,81,59",
+                        "endOffsets": "57,503,295,572,390,637,226,139,451"
+                    },
+                    "to": {
+                        "startLines": "2,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,1026,1078,1147,1216,1311,1376,1463,1545",
+                        "endColumns": "45,51,68,68,94,64,86,81,59",
+                        "endOffsets": "146,1073,1142,1211,1306,1371,1458,1540,1600"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.lemonade.app-mergeDebugResources-42:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/6fbb08855fecbb68ca7d19ed7a6f4738/transformed/core-1.9.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "2165",
+                        "endColumns": "100",
+                        "endOffsets": "2261"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/dd6fba9bc5f43dc34f0e31eababe82ab/transformed/material3-1.0.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "5,8,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "332,604,772",
+                        "endColumns": "75,81,73",
+                        "endOffsets": "403,681,841"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/.gradle/caches/transforms-3/391cd38f4c7f5fe1b7763df0b9f6f73f/transformed/ui-1.4.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "3,4,6,7,9,11,12,21,22,23,24,25,26,27,29,30,31",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "151,246,408,505,686,846,929,1595,1686,1773,1845,1914,1999,2089,2266,2342,2409",
+                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
+                        "endOffsets": "241,327,500,599,767,924,1021,1681,1768,1840,1909,1994,2084,2160,2337,2404,2517"
+                    }
+                },
+                {
+                    "source": "/home/bartolomeu-hangalo/StudioProjects/AndroidJetpackCompose_Basic/Lemonade/app/src/main/res/values-pt/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,5,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,4,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,300,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,84,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,380,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,1026,1078,1147,1216,1301,1366,1453,1535",
+                        "endColumns": "45,51,68,68,84,64,86,81,59",
+                        "endOffsets": "146,1073,1142,1211,1296,1361,1448,1530,1590"
+                    }
+                }
+            ]
+        }
+    ]
+}
