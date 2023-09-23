@@ -55,7 +55,7 @@ fun CourseApp(
 ) {
     LazyVerticalGrid(
         modifier = modifier,
-        columns = GridCells.Adaptive(minSize = 150.dp)
+        columns = GridCells.Fixed(2)
     ) {
         items(dataList) {course ->
             CourseCard(course, Modifier.padding(8.dp))
