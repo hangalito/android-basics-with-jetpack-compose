@@ -1,5 +1,7 @@
 package com.example.ipcalculator.data
 
+import android.util.Log
+
 data class Address(val address: List<Int>) {
 
     fun first() = address.first()
@@ -27,6 +29,7 @@ data class Address(val address: List<Int>) {
                 binaryString = "0$binaryString"
             }
 
+            Log.d("toBinary", binaryString)
             return binaryString
         }
 
@@ -34,7 +37,8 @@ data class Address(val address: List<Int>) {
             return when (borrowed) {
                 in 8..16 -> "255.0.0.0"
                 in 16..24 -> "255.255.0.0"
-                else -> "255.255.255.0"
+                in 25..32 -> "255.255.255.0"
+                else -> "0.0.0.0"
             }
         }
     }

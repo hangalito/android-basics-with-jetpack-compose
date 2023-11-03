@@ -2,7 +2,7 @@ package com.example.ipcalculator.ui
 
 import androidx.annotation.StringRes
 import androidx.compose.animation.animateContentSize
-import androidx.compose.animation.core.EaseInOutBounce
+import androidx.compose.animation.core.EaseInOutQuad
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -39,30 +39,35 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.text.isDigitsOnly
 import com.example.ipcalculator.R
 import com.example.ipcalculator.data.Address
 
 
 @Composable
 fun IPCalculatorApp() {
-    var expanded by rememberSaveable { mutableStateOf(false) }
-    var octet1 by rememberSaveable { mutableStateOf("") }
-    var octet2 by rememberSaveable { mutableStateOf("") }
-    var octet3 by rememberSaveable { mutableStateOf("") }
-    var octet4 by rememberSaveable { mutableStateOf("") }
-    var usedBits by rememberSaveable { mutableStateOf("") }
-
+    val newMask: String
     val ipAddress: String
     val defaultMask: String
-    val newMask: String
+    var expanded by rememberSaveable { mutableStateOf(false) }
+    var octet1 by rememberSaveable { mutableStateOf("0") }
+    var octet2 by rememberSaveable { mutableStateOf("0") }
+    var octet3 by rememberSaveable { mutableStateOf("0") }
+    var octet4 by rememberSaveable { mutableStateOf("0") }
+    var usedBits by rememberSaveable { mutableStateOf("0") }
+
     if (octet1.isBlank() && octet2.isBlank() && octet3.isBlank() && octet4.isBlank()) {
         ipAddress = "0.0.0.0"
         defaultMask = "0.0.0.0"
         newMask = "0.0.0.0"
+        octet1 = "0"
+        octet2 = "0"
+        octet3 = "0"
+        octet4 = "0"
     } else {
         ipAddress = "$octet1.$octet2.$octet3.$octet4"
         defaultMask = Address.getDefaultMask(usedBits.toInt())
-        newMask = ""
+        newMask = "0.0.0.0"
     }
     val address = Address(
         listOf(
@@ -72,13 +77,12 @@ fun IPCalculatorApp() {
             octet4.toInt()
         )
     )
-
-    val binaryIp = (
-            Address.toBinary(address.first()) +
-            Address.toBinary(address.second()) +
-            Address.toBinary(address.third()) +
-            Address.toBinary(address.fourth())
+    val binaryIp = (Address.toBinary(address.first()) + "."
+            + Address.toBinary(address.second()) + "."
+            + Address.toBinary(address.third()) + "."
+            + Address.toBinary(address.fourth())
             )
+
 
     Column {
         Card {
@@ -87,7 +91,10 @@ fun IPCalculatorApp() {
             ) {
                 IPAddressInput(
                     text = octet1,
-                    onValueChange = { octet1 = it },
+                    onValueChange = {
+                        if (it.isDigitsOnly()) octet1 = it.dropWhile { num -> num == '0' }
+                        if (octet1.isEmpty()) octet1 = "0"
+                    },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
                     ),
@@ -97,7 +104,10 @@ fun IPCalculatorApp() {
                 Text(text = ".", style = MaterialTheme.typography.displayMedium)
                 IPAddressInput(
                     text = octet2,
-                    onValueChange = { octet2 = it },
+                    onValueChange = {
+                        if (it.isDigitsOnly()) octet2 = it.dropWhile { num -> num == '0' }
+                        if (octet2.isEmpty()) octet2 = "0"
+                    },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
                     ),
@@ -107,7 +117,10 @@ fun IPCalculatorApp() {
                 Text(text = ".", style = MaterialTheme.typography.displayMedium)
                 IPAddressInput(
                     text = octet3,
-                    onValueChange = { octet3 = it },
+                    onValueChange = {
+                        if (it.isDigitsOnly()) octet3 = it.dropWhile { num -> num == '0' }
+                        if (octet3.isEmpty()) octet3 = "0"
+                    },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
                     ),
@@ -117,17 +130,23 @@ fun IPCalculatorApp() {
                 Text(text = ".", style = MaterialTheme.typography.displayMedium)
                 IPAddressInput(
                     text = octet4,
-                    onValueChange = { octet4 = it },
+                    onValueChange = {
+                        if (it.isDigitsOnly()) octet4 = it.dropWhile { num -> num == '0' }
+                        if (octet4.isEmpty()) octet4 = "0"
+                    },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
                     ),
                     keyboardActions = KeyboardActions { },
                     modifier = Modifier.weight(1f)
                 )
-                Text(text = "/", style = MaterialTheme.typography.displayMedium)
+                Text(text = "/", style = MaterialTheme.typography.displaySmall)
                 IPAddressInput(
                     text = usedBits,
-                    onValueChange = { usedBits = it },
+                    onValueChange = {
+                        usedBits = it.dropWhile { num -> num == '0' }
+                        if (usedBits.isEmpty()) usedBits = "0"
+                    },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Number, imeAction = ImeAction.Done
                     ),
@@ -236,7 +255,7 @@ fun ViewBinaryData(
             .fillMaxWidth()
             .animateContentSize(
                 animationSpec = tween(
-                    durationMillis = 370, delayMillis = 90, easing = EaseInOutBounce
+                    durationMillis = 370, delayMillis = 90, easing = EaseInOutQuad
                 )
             )
     ) {
