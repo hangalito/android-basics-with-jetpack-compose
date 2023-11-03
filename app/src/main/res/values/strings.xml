@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">IP Calculator</string>
-    <string name="ip_address">IP Address</string>
-    <string name="default_mask">Default Mask</string>
-    <string name="view_data_in_binary">View data in binary</string>
-    <string name="new_mask">New Mask</string>
-</resources>

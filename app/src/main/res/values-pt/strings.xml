@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Calculadora IP</string>
-    <string name="ip_address">Endereço IP</string>
-    <string name="default_mask">Máscara Padrão</string>
-    <string name="view_data_in_binary">Ver dados em binário</string>
-    <string name="new_mask">Nova Máscara</string>
-</resources>
