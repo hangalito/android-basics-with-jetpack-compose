@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="art1">Bartolomeu e o seu filho, Tiago</string>
+    <string name="art2">Tiago</string>
+    <string name="art3">Julio e Maria Hangalo</string>
+    <string name="art4">Bartolomeu em B&amp;P</string>
+    <string name="art5">Bartolomeu em frente a um espelho</string>
+    <string name="art6">Bartolomeu a caminho do Irão</string>
+    <string name="art7">Parceiros do Bartolomeu</string>
+    <string name="art8">Um milkshake feito com feijão, um feijãoshake</string>
+    <string name="art9">Tênis de Bartolomeu</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+</resources>
