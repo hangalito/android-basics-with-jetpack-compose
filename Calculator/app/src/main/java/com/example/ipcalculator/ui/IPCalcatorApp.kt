@@ -23,6 +23,7 @@ import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -50,8 +51,10 @@ import androidx.compose.ui.unit.em
 import androidx.core.text.isDigitsOnly
 import com.example.ipcalculator.R
 import com.example.ipcalculator.data.Address
+import com.example.ipcalculator.ui.theme.IPCalculatorTheme
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun IPCalculatorApp(modifier: Modifier = Modifier) {
     var expanded by rememberSaveable { mutableStateOf(false) }
@@ -91,100 +94,113 @@ fun IPCalculatorApp(modifier: Modifier = Modifier) {
                 it.toDecimal(a[2]) + "." + it.toDecimal(a[3])
     }
 
-
-    Column(
-        modifier = modifier
-            .verticalScroll(rememberScrollState())
-    ) {
-        Card {
-            Row(
-                modifier = Modifier.padding(4.dp), verticalAlignment = Alignment.Bottom
-            ) {
-                IPAddressInput(
-                    text = octet1,
-                    onValueChange = {
-                        if (it.isDigitsOnly()) octet1 = it.dropWhile { num -> num == '0' }
-                        if (octet1.isEmpty()) octet1 = "0"
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
-                    ),
-                    keyboardActions = KeyboardActions { },
-                    modifier = Modifier.weight(1f)
+    Scaffold(topBar = { ApplicationBar() }) { scaffold ->
+        Column(
+            modifier = modifier
+                .verticalScroll(rememberScrollState())
+                .padding(vertical = scaffold.calculateTopPadding(), horizontal = 8.dp)
+        ) {
+            Card {
+                Row(
+                    modifier = Modifier.padding(4.dp), verticalAlignment = Alignment.Bottom
+                ) {
+                    IPAddressInput(
+                        text = octet1,
+                        onValueChange = {
+                            if (it.isDigitsOnly()) octet1 = it.dropWhile { num -> num == '0' }
+                            if (octet1.isEmpty()) octet1 = "0"
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
+                        ),
+                        keyboardActions = KeyboardActions { },
+                        modifier = Modifier.weight(1f)
+                    )
+                    Text(text = ".", fontSize = 5.1.em)
+                    IPAddressInput(
+                        text = octet2,
+                        onValueChange = {
+                            if (it.isDigitsOnly()) octet2 = it.dropWhile { num -> num == '0' }
+                            if (octet2.isEmpty()) octet2 = "0"
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
+                        ),
+                        keyboardActions = KeyboardActions { },
+                        modifier = Modifier.weight(1f)
+                    )
+                    Text(text = ".", fontSize = 5.1.em)
+                    IPAddressInput(
+                        text = octet3,
+                        onValueChange = {
+                            if (it.isDigitsOnly()) octet3 = it.dropWhile { num -> num == '0' }
+                            if (octet3.isEmpty()) octet3 = "0"
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
+                        ),
+                        keyboardActions = KeyboardActions { },
+                        modifier = Modifier.weight(1f)
+                    )
+                    Text(text = ".", fontSize = 5.1.em)
+                    IPAddressInput(
+                        text = octet4,
+                        onValueChange = {
+                            if (it.isDigitsOnly()) octet4 = it.dropWhile { num -> num == '0' }
+                            if (octet4.isEmpty()) octet4 = "0"
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
+                        ),
+                        keyboardActions = KeyboardActions { },
+                        modifier = Modifier.weight(1f)
+                    )
+                    Text(text = "/", fontSize = 5.1.em)
+                    IPAddressInput(
+                        text = usedBits,
+                        onValueChange = {
+                            usedBits = it.dropWhile { num -> num == '0' }
+                            if (usedBits.isEmpty()) usedBits = "0"
+                        },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Number, imeAction = ImeAction.Done
+                        ),
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+            }
+            Card(Modifier.padding(vertical = 8.dp)) {
+                IPAndMaskInfoCard(
+                    ipAddressText = R.string.ip_address, ipAddressValue = ipAddress
                 )
-                Text(text = ".", fontSize = 5.1.em)
-                IPAddressInput(
-                    text = octet2,
-                    onValueChange = {
-                        if (it.isDigitsOnly()) octet2 = it.dropWhile { num -> num == '0' }
-                        if (octet2.isEmpty()) octet2 = "0"
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
-                    ),
-                    keyboardActions = KeyboardActions { },
-                    modifier = Modifier.weight(1f)
+                Divider()
+                IPAndMaskInfoCard(
+                    ipAddressText = R.string.default_mask, ipAddressValue = defaultMask
                 )
-                Text(text = ".", fontSize = 5.1.em)
-                IPAddressInput(
-                    text = octet3,
-                    onValueChange = {
-                        if (it.isDigitsOnly()) octet3 = it.dropWhile { num -> num == '0' }
-                        if (octet3.isEmpty()) octet3 = "0"
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
-                    ),
-                    keyboardActions = KeyboardActions { },
-                    modifier = Modifier.weight(1f)
-                )
-                Text(text = ".", fontSize = 5.1.em)
-                IPAddressInput(
-                    text = octet4,
-                    onValueChange = {
-                        if (it.isDigitsOnly()) octet4 = it.dropWhile { num -> num == '0' }
-                        if (octet4.isEmpty()) octet4 = "0"
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number, imeAction = ImeAction.Next
-                    ),
-                    keyboardActions = KeyboardActions { },
-                    modifier = Modifier.weight(1f)
-                )
-                Text(text = "/", fontSize = 5.1.em)
-                IPAddressInput(
-                    text = usedBits,
-                    onValueChange = {
-                        usedBits = it.dropWhile { num -> num == '0' }
-                        if (usedBits.isEmpty()) usedBits = "0"
-                    },
-                    keyboardOptions = KeyboardOptions(
-                        keyboardType = KeyboardType.Number, imeAction = ImeAction.Done
-                    ),
-                    modifier = Modifier.weight(1f)
+                Divider()
+                IPAndMaskInfoCard(
+                    ipAddressText = R.string.new_mask, ipAddressValue = newMask
                 )
             }
-        }
-        Card(Modifier.padding(vertical = 8.dp)) {
-            IPAndMaskInfoCard(
-                ipAddressText = R.string.ip_address, ipAddressValue = ipAddress
-            )
-            Divider()
-            IPAndMaskInfoCard(
-                ipAddressText = R.string.default_mask, ipAddressValue = defaultMask
-            )
-            Divider()
-            IPAndMaskInfoCard(
-                ipAddressText = R.string.new_mask, ipAddressValue = newMask
+            ViewBinaryData(
+                title = R.string.view_data_in_binary,
+                isExpanded = expanded,
+                onExpandClick = { expanded = !expanded },
+                binaryIp = ipAddressBin,
+                binaryDefaultMask = defaultMaskBin,
+                binaryNewMask = newMaskBin
             )
         }
-        ViewBinaryData(
-            title = R.string.view_data_in_binary,
-            isExpanded = expanded,
-            onExpandClick = { expanded = !expanded },
-            binaryIp = ipAddressBin,
-            binaryDefaultMask = defaultMaskBin,
-            binaryNewMask = newMaskBin
+    }
+}
+
+@Composable
+fun ApplicationBar(modifier: Modifier = Modifier) {
+    Row(modifier.fillMaxWidth()) {
+        Text(
+            text = stringResource(R.string.app_name),
+            style = MaterialTheme.typography.headlineMedium,
+            modifier = Modifier.padding(8.dp)
         )
     }
 }
@@ -215,7 +231,7 @@ fun IPAddressInput(
                 textStyle = MaterialTheme.typography.bodyLarge,
                 visualTransformation = {
                     TransformedText(buildAnnotatedString {
-                        withStyle(SpanStyle(fontSize = 1.15.em)) {
+                        withStyle(SpanStyle(fontSize = 1.em)) {
                             append(
                                 it
                             )
@@ -349,8 +365,10 @@ fun BinaryValue(
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun IPCalculatorPreview() {
-    IPCalculatorApp()
+    IPCalculatorTheme(darkTheme = true) {
+        IPCalculatorApp()
+    }
 }
