@@ -14,6 +14,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -35,20 +36,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.OffsetMapping
+import androidx.compose.ui.text.input.TransformedText
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.em
 import androidx.core.text.isDigitsOnly
 import com.example.ipcalculator.R
 import com.example.ipcalculator.data.Address
 
 
 @Composable
-fun IPCalculatorApp() {
-    val newMask: String
-    val ipAddress: String
-    val defaultMask: String
+fun IPCalculatorApp(modifier: Modifier = Modifier) {
     var expanded by rememberSaveable { mutableStateOf(false) }
     var octet1 by rememberSaveable { mutableStateOf("0") }
     var octet2 by rememberSaveable { mutableStateOf("0") }
@@ -56,19 +61,8 @@ fun IPCalculatorApp() {
     var octet4 by rememberSaveable { mutableStateOf("0") }
     var usedBits by rememberSaveable { mutableStateOf("0") }
 
-    if (octet1.isBlank() && octet2.isBlank() && octet3.isBlank() && octet4.isBlank()) {
-        ipAddress = "0.0.0.0"
-        defaultMask = "0.0.0.0"
-        newMask = "0.0.0.0"
-        octet1 = "0"
-        octet2 = "0"
-        octet3 = "0"
-        octet4 = "0"
-    } else {
-        ipAddress = "$octet1.$octet2.$octet3.$octet4"
-        defaultMask = Address.getDefaultMask(usedBits.toInt())
-        newMask = "0.0.0.0"
-    }
+    val ipAddress = "$octet1.$octet2.$octet3.$octet4".ifEmpty { "0.0.0.0" }
+    val defaultMask = Address.getDefaultMask(usedBits.toInt()).ifEmpty { "0.0.0.0" }
     val address = Address(
         listOf(
             octet1.toInt(),
@@ -77,14 +71,31 @@ fun IPCalculatorApp() {
             octet4.toInt()
         )
     )
-    val binaryIp = (Address.toBinary(address.first()) + "."
+    val ipAddressBin = (Address.toBinary(address.first()) + "."
             + Address.toBinary(address.second()) + "."
             + Address.toBinary(address.third()) + "."
             + Address.toBinary(address.fourth())
             )
+    val defaultMaskSplit = defaultMask.split('.')
+    val defaultMaskBin = (
+            Address.toBinary(defaultMaskSplit.first().toInt()) + "."
+                    + Address.toBinary(defaultMaskSplit[1].toInt()) + "."
+                    + Address.toBinary(defaultMaskSplit[2].toInt()) + "."
+                    + Address.toBinary(defaultMaskSplit.last().toInt())
+            )
+    val newMaskBin = Address.getNewMaskBin(usedBits.toInt())
+
+    val newMask = Address.let {
+        val a = newMaskBin.split(".")
+        it.toDecimal(a[0]) + "." + it.toDecimal(a[1]) + "." +
+                it.toDecimal(a[2]) + "." + it.toDecimal(a[3])
+    }
 
 
-    Column {
+    Column(
+        modifier = modifier
+            .verticalScroll(rememberScrollState())
+    ) {
         Card {
             Row(
                 modifier = Modifier.padding(4.dp), verticalAlignment = Alignment.Bottom
@@ -101,7 +112,7 @@ fun IPCalculatorApp() {
                     keyboardActions = KeyboardActions { },
                     modifier = Modifier.weight(1f)
                 )
-                Text(text = ".", style = MaterialTheme.typography.displayMedium)
+                Text(text = ".", fontSize = 5.1.em)
                 IPAddressInput(
                     text = octet2,
                     onValueChange = {
@@ -114,7 +125,7 @@ fun IPCalculatorApp() {
                     keyboardActions = KeyboardActions { },
                     modifier = Modifier.weight(1f)
                 )
-                Text(text = ".", style = MaterialTheme.typography.displayMedium)
+                Text(text = ".", fontSize = 5.1.em)
                 IPAddressInput(
                     text = octet3,
                     onValueChange = {
@@ -127,7 +138,7 @@ fun IPCalculatorApp() {
                     keyboardActions = KeyboardActions { },
                     modifier = Modifier.weight(1f)
                 )
-                Text(text = ".", style = MaterialTheme.typography.displayMedium)
+                Text(text = ".", fontSize = 5.1.em)
                 IPAddressInput(
                     text = octet4,
                     onValueChange = {
@@ -140,7 +151,7 @@ fun IPCalculatorApp() {
                     keyboardActions = KeyboardActions { },
                     modifier = Modifier.weight(1f)
                 )
-                Text(text = "/", style = MaterialTheme.typography.displaySmall)
+                Text(text = "/", fontSize = 5.1.em)
                 IPAddressInput(
                     text = usedBits,
                     onValueChange = {
@@ -154,7 +165,7 @@ fun IPCalculatorApp() {
                 )
             }
         }
-        Card {
+        Card(Modifier.padding(vertical = 8.dp)) {
             IPAndMaskInfoCard(
                 ipAddressText = R.string.ip_address, ipAddressValue = ipAddress
             )
@@ -171,9 +182,9 @@ fun IPCalculatorApp() {
             title = R.string.view_data_in_binary,
             isExpanded = expanded,
             onExpandClick = { expanded = !expanded },
-            binaryIp = binaryIp,
-            binaryDefaultMask = "",
-            binaryNewMask = ""
+            binaryIp = ipAddressBin,
+            binaryDefaultMask = defaultMaskBin,
+            binaryNewMask = newMaskBin
         )
     }
 }
@@ -201,7 +212,16 @@ fun IPAddressInput(
                 keyboardOptions = keyboardOptions,
                 keyboardActions = keyboardActions,
                 singleLine = true,
-                textStyle = MaterialTheme.typography.bodyLarge
+                textStyle = MaterialTheme.typography.bodyLarge,
+                visualTransformation = {
+                    TransformedText(buildAnnotatedString {
+                        withStyle(SpanStyle(fontSize = 1.15.em)) {
+                            append(
+                                it
+                            )
+                        }
+                    }, offsetMapping = OffsetMapping.Identity)
+                }
             )
         }
     }
@@ -209,7 +229,9 @@ fun IPAddressInput(
 
 @Composable
 fun IPAndMaskInfoCard(
-    @StringRes ipAddressText: Int, ipAddressValue: String, modifier: Modifier = Modifier
+    @StringRes ipAddressText: Int,
+    ipAddressValue: String,
+    modifier: Modifier = Modifier
 ) {
     Card(
         modifier = modifier.padding(4.dp)
@@ -223,7 +245,7 @@ fun IPAndMaskInfoCard(
         ) {
             Text(
                 text = ipAddressValue,
-                style = MaterialTheme.typography.displaySmall,
+                style = MaterialTheme.typography.headlineLarge,
                 modifier = Modifier.weight(4f)
             )
             Text(
@@ -255,7 +277,7 @@ fun ViewBinaryData(
             .fillMaxWidth()
             .animateContentSize(
                 animationSpec = tween(
-                    durationMillis = 370, delayMillis = 90, easing = EaseInOutQuad
+                    durationMillis = 300, easing = EaseInOutQuad
                 )
             )
     ) {
@@ -319,8 +341,9 @@ fun BinaryValue(
             )
             Text(
                 text = stringResource(description),
+                textAlign = TextAlign.End,
+                modifier = Modifier.weight(1f),
                 style = MaterialTheme.typography.labelSmall,
-                modifier = Modifier.weight(1f)
             )
         }
     }
