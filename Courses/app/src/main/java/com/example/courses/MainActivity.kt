@@ -15,6 +15,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -22,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -57,7 +59,7 @@ fun CourseApp(
         modifier = modifier,
         columns = GridCells.Fixed(2)
     ) {
-        items(dataList) {course ->
+        items(dataList) { course ->
             CourseCard(course, Modifier.padding(8.dp))
         }
     }
@@ -71,6 +73,7 @@ fun CourseCard(
     Card(
         modifier = modifier
             .height(68.dp)
+            .shadow(elevation = 12.dp, shape = CardDefaults.elevatedShape),
     ) {
         Row {
             Image(
@@ -103,7 +106,7 @@ fun CourseCard(
     }
 }
 
-@Preview
+@Preview(showBackground = true, device = "id:Nexus One")
 @Composable
 fun CourseAppPreview() {
     CourseApp(DataSource.topics)
