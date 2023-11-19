@@ -204,7 +204,7 @@ fun IPAddressInput(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true,device="id:Galaxy Nexus")
 @Composable
 fun IPCalculatorPreview() {
     IPCalculatorTheme(darkTheme = true) {

@@ -39,12 +39,14 @@ class CalculatorViewModel : ViewModel() {
 
 
     fun updateBorrowedBits(borrowedValue: String) {
-        try {
+        usedBits = try {
             if (borrowedValue.toInt() < 32) {
-                usedBits = borrowedValue.dropWhile { char -> char == '0' }
+                borrowedValue.dropWhile { char -> char == '0' }
+            } else {
+                "31"
             }
         } catch (_: Exception) {
-            usedBits = borrowedValue.dropWhile { char -> char == '0' }
+            borrowedValue.dropWhile { char -> char == '0' }
         }
         if (usedBits.isEmpty()) {
             usedBits = "0"
@@ -82,10 +84,19 @@ class CalculatorViewModel : ViewModel() {
     }
 
     fun updateOctet1(octetValue: String) {
-        octet1 = octetValue.dropWhile { char -> char == '0' }
-        if (octet1.isEmpty()) {
-            octet1 = "0"
+        try {
+            octet1 = if (octetValue.toInt() < 256) {
+                octetValue.dropWhile { char -> char == '0' }
+            } else {
+                "255"
+            }
+        } catch (_: Exception) {
+            octet1 = octetValue.dropWhile { char -> char == '0' }
+            if (octet1.isEmpty()) {
+                octet1 = "0"
+            }
         }
+
         val currentAddress = mutableListOf<String>()
         _uiState.value.ipAddress.let {
             currentAddress.add(octet1)
@@ -101,10 +112,19 @@ class CalculatorViewModel : ViewModel() {
     }
 
     fun updateOctet2(octetValue: String) {
-        octet2 = octetValue.dropWhile { char -> char == '0' }
-        if (octet2.isEmpty()) {
-            octet2 = "0"
+        try {
+            octet2 = if (octetValue.toInt() < 256) {
+                octetValue.dropWhile { char -> char == '0' }
+            } else {
+                "255"
+            }
+        } catch (_: Exception) {
+            octet2 = octetValue.dropWhile { char -> char == '0' }
+            if (octet2.isEmpty()) {
+                octet2 = "0"
+            }
         }
+
         val currentAddress = mutableListOf<String>()
         _uiState.value.ipAddress.let {
             currentAddress.add(it.first())
@@ -120,10 +140,19 @@ class CalculatorViewModel : ViewModel() {
     }
 
     fun updateOctet3(octetValue: String) {
-        octet3 = octetValue.dropWhile { char -> char == '0' }
-        if (octet3.isEmpty()) {
-            octet3 = "0"
+        try {
+            octet3 = if (octetValue.toInt() < 256) {
+                octetValue.dropWhile { char -> char == '0' }
+            } else {
+                "255"
+            }
+        } catch (_: Exception) {
+            octet3 = octetValue.dropWhile { char -> char == '0' }
+            if (octet3.isEmpty()) {
+                octet3 = "0"
+            }
         }
+
         val currentAddress = mutableListOf<String>()
         _uiState.value.ipAddress.let {
             currentAddress.add(it.first())
@@ -139,10 +168,19 @@ class CalculatorViewModel : ViewModel() {
     }
 
     fun updateOctet4(octetValue: String) {
-        octet4 = octetValue.dropWhile { char -> char == '0' }
-        if (octet4.isEmpty()) {
-            octet4 = "0"
+        try {
+            octet4 = if (octetValue.toInt() < 256) {
+                octetValue.dropWhile { char -> char == '0' }
+            } else {
+                "255"
+            }
+        } catch (_: Exception) {
+            octet4 = octetValue.dropWhile { char -> char == '0' }
+            if (octet4.isEmpty()) {
+                octet4 = "0"
+            }
         }
+
         val currentAddress = mutableListOf<String>()
         _uiState.value.ipAddress.let {
             currentAddress.add(it.first())
