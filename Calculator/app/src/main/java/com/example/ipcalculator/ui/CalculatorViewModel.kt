@@ -15,13 +15,7 @@ class CalculatorViewModel : ViewModel() {
     /**
      * Calculator state for this session
      */
-    private val _uiState = MutableStateFlow(
-        CalculatorUiState(
-            ipAddress = Address(listOf("0", "0", "0", "0")),
-            defaultMask = Address(listOf("0", "0", "0", "0")),
-            newMask = Address(listOf("0", "0", "0", "0"))
-        )
-    )
+    private val _uiState = MutableStateFlow(CalculatorUiState())
     val uiState: StateFlow<CalculatorUiState> = _uiState.asStateFlow()
 
 
